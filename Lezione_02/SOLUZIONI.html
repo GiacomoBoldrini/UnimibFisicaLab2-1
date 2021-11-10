@@ -198,6 +198,83 @@
        Esercizi per la lezione 3
       </a>
      </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_03/SOLUZIONI.html">
+       Soluzioni: Lezione 3
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Lezione_04/README.html">
+     Lezione 4: la generazione di numeri pseudo-casuali
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_04/ESEMPI.html">
+       Esempi: Lezione 4
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_04/ESERCIZI.html">
+       Esercizi per la lezione 4
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Lezione_05/README.html">
+     Lezione 5: programmazione
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       template
+      </span>
+     </code>
+     e Standard Template Library
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_05/ESEMPI.html">
+       Esempi: Lezione 5
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_05/ESERCIZI.html">
+       Esercizi per la lezione 5
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Lezione_06/README.html">
+     Lezione 6: zeri ed estremanti di funzioni
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_06/ESEMPI.html">
+       Esempi: Lezione 6
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_06/ESERCIZI.html">
+       Esercizi per la lezione 6
+      </a>
+     </li>
     </ul>
    </li>
   </ul>
@@ -320,19 +397,19 @@
 
 <span class="k">class</span> <span class="nc">complesso</span><span class="p">{</span><span class="w"></span>
 
-<span class="k">public</span><span class="o">:</span><span class="w"> </span>
+<span class="k">public</span><span class="o">:</span><span class="w"></span>
 <span class="w">    </span><span class="c1">// Constructors</span>
 <span class="w">    </span><span class="n">complesso</span><span class="p">();</span><span class="w"></span>
-<span class="w">    </span><span class="n">complesso</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">r</span><span class="p">);</span><span class="w"> </span>
-<span class="w">    </span><span class="n">complesso</span><span class="w"> </span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">;</span><span class="w"> </span>
+<span class="w">    </span><span class="n">complesso</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">r</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">complesso</span><span class="w"> </span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="n">complesso</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">complesso</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">orig</span><span class="p">);</span><span class="w"></span>
 <span class="w">    </span><span class="c1">// Destructor</span>
 <span class="w">    </span><span class="o">~</span><span class="n">complesso</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 
 <span class="w">    </span><span class="c1">// Public class methods</span>
-<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="nf">modulo</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">;</span><span class="w">      </span>
-<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="nf">fase</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">;</span><span class="w">  </span>
-<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">stampami</span><span class="p">();</span><span class="w">  </span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="nf">modulo</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="nf">fase</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">stampami</span><span class="p">();</span><span class="w"></span>
 <span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="nf">get_real</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">m_real</span><span class="p">;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
 <span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="nf">get_imag</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">m_imag</span><span class="p">;</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
 <span class="w">    </span><span class="n">complesso</span><span class="w"> </span><span class="nf">somma</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">complesso</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">orig</span><span class="p">);</span><span class="w"></span>
@@ -341,6 +418,7 @@
 <span class="w">    </span><span class="n">complesso</span><span class="w"> </span><span class="nf">moltiplicazione</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">complesso</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">fattore</span><span class="p">);</span><span class="w"></span>
 
 <span class="w">    </span><span class="c1">// Operators overloading</span>
+<span class="w">    </span><span class="n">complesso</span><span class="w"> </span><span class="k">operator</span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">complesso</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">addendo</span><span class="p">);</span><span class="w">  </span>
 <span class="w">    </span><span class="n">complesso</span><span class="w"> </span><span class="o">&amp;</span><span class="w">  </span><span class="k">operator</span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">complesso</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">orig</span><span class="p">);</span><span class="w"></span>
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="k">operator</span><span class="o">+=</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">complesso</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">addendo</span><span class="p">);</span><span class="w"></span>
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="k">operator</span><span class="o">+=</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">addendo</span><span class="p">);</span><span class="w"></span>
@@ -350,7 +428,7 @@
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="k">operator</span><span class="o">*=</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">fattore</span><span class="p">);</span><span class="w"></span>
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="k">operator</span><span class="o">/=</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">complesso</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">fattore</span><span class="p">);</span><span class="w"></span>
 <span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="k">operator</span><span class="o">/=</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">fattore</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span>
+
 
 <span class="k">private</span><span class="o">:</span><span class="w"></span>
 <span class="w">    </span><span class="c1">// Private members</span>
@@ -465,11 +543,20 @@
 
 <span class="c1">//--------------Overloading---------------</span>
 
+<span class="n">complesso</span><span class="w"></span>
+<span class="n">complesso</span><span class="o">::</span><span class="k">operator</span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">complesso</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">addendo</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w"> </span><span class="n">complesso</span><span class="w"> </span><span class="nf">somma</span><span class="w"> </span><span class="p">(</span><span class="n">m_real</span><span class="p">,</span><span class="w"> </span><span class="n">m_imag</span><span class="p">)</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w"> </span><span class="n">somma</span><span class="p">.</span><span class="n">m_real</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">somma</span><span class="p">.</span><span class="n">m_real</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">addendo</span><span class="p">.</span><span class="n">m_real</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w"> </span><span class="n">somma</span><span class="p">.</span><span class="n">m_imag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">somma</span><span class="p">.</span><span class="n">m_imag</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">addendo</span><span class="p">.</span><span class="n">m_imag</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">somma</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
 <span class="n">complesso</span><span class="w"> </span><span class="o">&amp;</span><span class="w">  </span><span class="n">complesso</span><span class="o">::</span><span class="k">operator</span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">complesso</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">orig</span><span class="p">){</span><span class="w"></span>
 <span class="w">  </span><span class="n">m_real</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">orig</span><span class="p">.</span><span class="n">m_real</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">  </span><span class="n">m_imag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">orig</span><span class="p">.</span><span class="n">m_imag</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="k">this</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w">  </span>
+<span class="p">}</span><span class="w"></span>
 
 <span class="kt">void</span><span class="w"> </span><span class="n">complesso</span><span class="o">::</span><span class="k">operator</span><span class="o">+=</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">complesso</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">addendo</span><span class="p">){</span><span class="w"></span>
 <span class="w">  </span><span class="n">m_real</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_real</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">addendo</span><span class="p">.</span><span class="n">m_real</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
@@ -511,7 +598,7 @@
 <span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">denom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">fattore</span><span class="p">.</span><span class="n">m_real</span><span class="o">*</span><span class="n">fattore</span><span class="p">.</span><span class="n">m_real</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">fattore</span><span class="p">.</span><span class="n">m_imag</span><span class="o">*</span><span class="n">fattore</span><span class="p">.</span><span class="n">m_imag</span><span class="p">);</span><span class="w"> </span><span class="c1">// c^2 + d^2</span>
 
 <span class="w">  </span><span class="c1">//Controlli</span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">denom</span><span class="o">==</span><span class="mi">0</span><span class="p">){</span><span class="w"> </span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">denom</span><span class="o">==</span><span class="mi">0</span><span class="p">){</span><span class="w"></span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">fattore</span><span class="p">.</span><span class="n">m_real</span><span class="p">){</span><span class="w"></span>
 <span class="w">      </span><span class="n">m_real</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_real</span><span class="o">/</span><span class="n">fattore</span><span class="p">.</span><span class="n">m_real</span><span class="p">;</span><span class="w"></span>
 <span class="w">      </span><span class="k">return</span><span class="p">;</span><span class="w"></span>

@@ -196,6 +196,83 @@
        Esercizi per la lezione 3
       </a>
      </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_03/SOLUZIONI.html">
+       Soluzioni: Lezione 3
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Lezione_04/README.html">
+     Lezione 4: la generazione di numeri pseudo-casuali
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_04/ESEMPI.html">
+       Esempi: Lezione 4
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_04/ESERCIZI.html">
+       Esercizi per la lezione 4
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Lezione_05/README.html">
+     Lezione 5: programmazione
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       template
+      </span>
+     </code>
+     e Standard Template Library
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_05/ESEMPI.html">
+       Esempi: Lezione 5
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_05/ESERCIZI.html">
+       Esercizi per la lezione 5
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Lezione_06/README.html">
+     Lezione 6: zeri ed estremanti di funzioni
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_06/ESEMPI.html">
+       Esempi: Lezione 6
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_06/ESERCIZI.html">
+       Esercizi per la lezione 6
+      </a>
+     </li>
     </ul>
    </li>
   </ul>
@@ -301,31 +378,6 @@
    Esercizio 7.5
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#esercizio-7-6">
-   Esercizio 7.6
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#esercizio-7-7">
-   Esercizio 7.7
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#esercizio-7-8">
-   Esercizio 7.8
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#esercizio-7-9">
-   Esercizio 7.9
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#esercizio-7-10">
-   Esercizio 7.10
-  </a>
- </li>
 </ul>
 
             </nav>
@@ -341,133 +393,64 @@
 <h1>Esercizi per la lezione 7<a class="headerlink" href="#esercizi-per-la-lezione-7" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="esercizio-7-1">
 <h2>Esercizio 7.1<a class="headerlink" href="#esercizio-7-1" title="Permalink to this headline">¶</a></h2>
-<p>Si scriva una funzione <code class="docutils literal notranslate"><span class="pre">somma</span></code> che,
-utilizzando la tecnologia <code class="docutils literal notranslate"><span class="pre">template</span></code>,
-sia applicabile a qualunque tipo numerico del <code class="docutils literal notranslate"><span class="pre">C++</span></code>.</p>
+<p>Si generi un campione di numeri pseudo-casuali
+distribuiti secondo una distribuzione di densità esponenziale
+con tempo caratteristico t<sub>0</sub> di 5 secondi
+e si visualizzi la distribuzione del campione ottenuto
+in un <code class="docutils literal notranslate"><span class="pre">TH1F</span></code> utilizzando il metodo della funzione inversa.
+Si scrivano tutte le funzioni deputate alla generazione di numeri casuali
+in una libreria, implementata in file separati rispetto al programma principale.</p>
 <p><img alt="linea" src="../_images/linea.png" /></p>
 </div>
 <div class="section" id="esercizio-7-2">
 <h2>Esercizio 7.2<a class="headerlink" href="#esercizio-7-2" title="Permalink to this headline">¶</a></h2>
-<p>Si testi la funzione <code class="docutils literal notranslate"><span class="pre">somma</span></code> sviluppata nell’esercizio precedente
-sulla classe dei numeri complessi sviluppata durante la Lezione 3,
-aggiungendo anche una specializzazione per un tipo a piacere.</p>
+<p>Si utilizzi il risultato del primo esercizio per simulare uno pseudo-esperimento di conteggio
+con caratteristiche di Poisson:</p>
+<ul class="simple">
+<li><p>si scelga un tempo caratteristico t<sub>0</sub> di un processo di decadimento radioattivo;</p></li>
+<li><p>si scelta un tempo di misura t<sub>M</sub> entro cui fare conteggi;</p></li>
+<li><p>in un ciclo, si simulino N pseudo-esperimenti di conteggio, in cui,
+per ciascuno di essi, si simuli una sequenza di eventi casuali
+con intertempo caratteristico dei fenomeni di Poisson,
+fino a che il tempo totale trascorso non sia maggiore del tempo di misura,
+contando il numero di eventi generati che cascano nell’intervallo;</p></li>
+<li><p>si riempia un istogramma <code class="docutils literal notranslate"><span class="pre">TH1F</span></code> con i conteggi simulati per ogni esperimento</p></li>
+</ul>
 <p><img alt="linea" src="../_images/linea.png" /></p>
 </div>
 <div class="section" id="esercizio-7-3">
 <h2>Esercizio 7.3<a class="headerlink" href="#esercizio-7-3" title="Permalink to this headline">¶</a></h2>
-<p>Si costruisca la classe <code class="docutils literal notranslate"><span class="pre">SimpleArray</span></code>, templata sul tipo degli oggetti che contiene,
-implementando le funzioni definite nel prototipo presentato a lezione.</p>
-<ul class="simple">
-<li><p>Si ricordi di utilizzare correttamente l’allocazione dinamica della memoria.</p></li>
-<li><p>Si aggiungano alla classe anche metodi che permettano di accedere agli elementi della classe
-in caso vengano chiamati su un oggetto <code class="docutils literal notranslate"><span class="pre">const</span></code>.</p></li>
-<li><p>Si faccia in modo che i metodi di accesso al contenuto del <code class="docutils literal notranslate"><span class="pre">SimpleArray</span></code>
-controllino il valore dell’indice
-prima di accedere all’array salvato in memoria.</p></li>
-<li><p>Si verifichi che la classe <code class="docutils literal notranslate"><span class="pre">SimpleArray</span></code> può essere templata sulla classe dei numeri complessi
-sviluppata durante la Lezione 3.</p></li>
-</ul>
+<p>Si utilizzi il codice sorgente scritto nell’esercizio precedente
+per aggiungere alla libreria sviluppata per l’esercizio 1
+una funzione che generi numeri casuali
+secondo la distribuzione di Poisson,
+avendo la media di eventi attesi come parametro in ingresso.
+Si riscriva l’esercizio precedente facendo uso di questa funzione,
+disegnando anche l’istogramma della densità di probabilità.</p>
 <p><img alt="linea" src="../_images/linea.png" /></p>
 </div>
 <div class="section" id="esercizio-7-4">
 <h2>Esercizio 7.4<a class="headerlink" href="#esercizio-7-4" title="Permalink to this headline">¶</a></h2>
-<p>Si implementi una classe templata dal nome <code class="docutils literal notranslate"><span class="pre">DynamicArray</span></code> che inizialmente
-non contenga alcun elemento ed abbia un metodo <code class="docutils literal notranslate"><span class="pre">push_back</span> <span class="pre">()</span></code> che permetta di aggiungere
-un elemento in fondo all’array degli elementi già esistenti.</p>
+<p>A partire dall’esercizio precedente,</p>
 <ul class="simple">
-<li><p>Si progetti un meccanismo che rimpiazzi l’array che contiene gli elementi quando è pieno,
-sostituendolo con uno più capiente.</p></li>
-<li><p>Si aggiunga un metodo che permetta anche di svuotare l’oggetto di tipo <code class="docutils literal notranslate"><span class="pre">DynamicArray</span></code>.</p></li>
+<li><p>si scriva un nuovo programma che riempia un <code class="docutils literal notranslate"><span class="pre">vector</span></code> con il campione generato;</p></li>
+<li><p>si scriva una libreria che calcola le statistiche del campione
+(media, varianza, asimmetria, curtosi)
+a partire dal <code class="docutils literal notranslate"><span class="pre">vector</span></code> come input;</p></li>
+<li><p>si utilizzi il campione generato per fare il test di funzionamento della libreria.</p></li>
 </ul>
 <p><img alt="linea" src="../_images/linea.png" /></p>
 </div>
 <div class="section" id="esercizio-7-5">
 <h2>Esercizio 7.5<a class="headerlink" href="#esercizio-7-5" title="Permalink to this headline">¶</a></h2>
-<p>Si implementi la classe templata <code class="docutils literal notranslate"><span class="pre">vettore</span></code> definita nella lezione.</p>
 <ul class="simple">
-<li><p>Si ricordi di controllare che gli indici passati ai metodi della classe siano entro i limiti
-della memoria occupata dagli oggetti di tipo <code class="docutils literal notranslate"><span class="pre">vettore</span></code></p></li>
-<li><p>Si aggiungano gli <strong>operatori algebrici</strong> necessari per la definizione di uno spazio vettoriale</p></li>
-</ul>
-<p><img alt="linea" src="../_images/linea.png" /></p>
-</div>
-<div class="section" id="esercizio-7-6">
-<h2>Esercizio 7.6<a class="headerlink" href="#esercizio-7-6" title="Permalink to this headline">¶</a></h2>
-<p>Si implementi la classe templata <code class="docutils literal notranslate"><span class="pre">matrice</span></code> delle matrici quadrate di dimensione <em>N</em>,
-templata sulla dimensione delle matrici,
-definendo anche le operazioni fra matrici.</p>
-<ul>
-<li><p>Si definiscano gli operatori di moltiplicazione fra matrici e vettori,
-utilizzando anche la classe <code class="docutils literal notranslate"><span class="pre">vettore</span></code>.</p></li>
-<li><p>Si verifichi il funzionamento dell’algoritmo creato costruendo un esempio
-basato sulle rotazioni nel piano.</p></li>
-<li><p>Si scriva un metodo per il calcolo del determinante di una matrice nel caso sia quadrata,
-sfruttando la formula di Laplace ed una funzione ricorsiva.</p></li>
-<li><p>Si ricordi che,
-in ogni caso di ricorsività,
-oltre alla formula iterativa va aggiunto anche il metodo che restituisce il determinate
-nel caso della matrice più piccola possibile, cioè quella composta da un unico numero.
-Quindi, oltre al metodo:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">double</span><span class="w"> </span><span class="nf">determinante</span><span class="w"> </span><span class="p">()</span><span class="w"> </span>
-<span class="w">  </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="c1">// implementazione</span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
-</pre></div>
-</div>
-<p>è necessario anche aggiungere, al di fuori della definizione della classe <code class="docutils literal notranslate"><span class="pre">matrice</span></code>,
-la specializzazione al caso di dimensione <code class="docutils literal notranslate"><span class="pre">1</span></code>:</p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">template</span><span class="o">&lt;&gt;</span><span class="w"></span>
-<span class="kt">double</span><span class="w"> </span><span class="n">matrice</span><span class="o">&lt;</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="o">&gt;::</span><span class="n">determinante</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">elementi</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
-</pre></div>
-</div>
-</li>
-<li><p>Si scriva un metodo che calcola la matrice inversa, nel caso di una matrice quadrata
-e che ritorna una matrice nulla se la matrice orginale non è quadrata
-o ha determinante nullo.</p></li>
-</ul>
-<p><img alt="linea" src="../_images/linea.png" /></p>
-</div>
-<div class="section" id="esercizio-7-7">
-<h2>Esercizio 7.7<a class="headerlink" href="#esercizio-7-7" title="Permalink to this headline">¶</a></h2>
-<p>Si crei un <code class="docutils literal notranslate"><span class="pre">std::vector</span></code> vuoto e, tramite un ciclo <code class="docutils literal notranslate"><span class="pre">for</span></code>,
-lo si riempia con i primi 10 numeri della successione di Fibonacci.</p>
-<ul class="simple">
-<li><p>E’ conveniente, dal punto di vista dell’esecuzione di questo esercizio,
-utilizzare una funzione esterna al ciclo per il calcolo dei numeri di Fibonacci?</p></li>
-<li><p>Si stampi a schermo il suo contenuto utilizzando un ciclo su un numero intero,
-oppure utilizzando un iteratore.</p></li>
-</ul>
-<p><img alt="linea" src="../_images/linea.png" /></p>
-</div>
-<div class="section" id="esercizio-7-8">
-<h2>Esercizio 7.8<a class="headerlink" href="#esercizio-7-8" title="Permalink to this headline">¶</a></h2>
-<p>Si crei un <code class="docutils literal notranslate"><span class="pre">std::vector</span></code> vuoto e lo si riempia con cinque oggetti
-del tipo della classe <code class="docutils literal notranslate"><span class="pre">complesso</span></code> sviluppato durante la Lezione 3.</p>
-<ul class="simple">
-<li><p>Tramiti opportuni messaggi a schermo,
-si verifichi quando vengono chiamati costruttore,
-<em>copy constructor</em>, operatore di assegnazione e distruttore
-della classe <code class="docutils literal notranslate"><span class="pre">complesso</span></code></p></li>
-</ul>
-<p><img alt="linea" src="../_images/linea.png" /></p>
-</div>
-<div class="section" id="esercizio-7-9">
-<h2>Esercizio 7.9<a class="headerlink" href="#esercizio-7-9" title="Permalink to this headline">¶</a></h2>
-<p>Si crei una <code class="docutils literal notranslate"><span class="pre">std::map</span></code> vuota e la si riempia con una sequenza di numeri complessi,
-utilizzando la norma dei numeri stessi come chiave di ordinamento della mappa.</p>
-<ul class="simple">
-<li><p>Si stampino quindi a schermo i numeri, ordinati per norma.</p></li>
-</ul>
-<p><img alt="linea" src="../_images/linea.png" /></p>
-</div>
-<div class="section" id="esercizio-7-10">
-<h2>Esercizio 7.10<a class="headerlink" href="#esercizio-7-10" title="Permalink to this headline">¶</a></h2>
-<p>Si crei una <code class="docutils literal notranslate"><span class="pre">std::string</span></code> riempita con un periodo scelto a piacere.</p>
-<ul class="simple">
-<li><p>Si contino il numero di parole ed il numero di lettere (spazi esclusi)
-che compongono il periodo.</p></li>
-<li><p>Si divida la stringa in singole parole,
-ciascuna salvata con una stringa all’interno di un <code class="docutils literal notranslate"><span class="pre">std::vector</span></code>.</p></li>
+<li><p>Si utilizzi il risultato dell’esercizio precedente
+per calcolare le statistiche di una distribuzione di Poisson
+al variare della media, fra 1 e 20.</p></li>
+<li><p>Si disegni l’andamento ottenuto di ciascuna statistica in funzione della media
+con quattro <code class="docutils literal notranslate"><span class="pre">TGraph</span></code> di <code class="docutils literal notranslate"><span class="pre">ROOT</span></code>;</p></li>
+<li><p>si disegnino in quattro <code class="docutils literal notranslate"><span class="pre">TGraph</span></code> in quattro <code class="docutils literal notranslate"><span class="pre">TCanvas</span></code> e si crei per ciascuno
+un’immagine salvata su disco.</p></li>
 </ul>
 </div>
 </div>
