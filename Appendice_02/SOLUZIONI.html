@@ -1,0 +1,1696 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soluzioni: Appendice 2 &#8212; Laboratorio 2</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Approfondimento A3: approfondimenti su STL" href="../Appendice_03/README.html" />
+    <link rel="prev" title="Esercizi per l’appendice 2" href="ESERCIZI.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo_unimib.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Laboratorio 2</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Laboratorio 2 - I Modulo
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Prerequisiti/README.html">
+   I prerequisiti del corso
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Ripasso/README.html">
+   Ripasso di
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     C
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../content.html">
+   Indice delle Lezioni
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Lezione_01/README.html">
+     Lezione 1: strutturazione di un programma ed introduzione al
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       C++
+      </span>
+     </code>
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_01/ESEMPI.html">
+       Esempi: Lezione 1
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_01/ESERCIZI.html">
+       Esercizi per la lezione 1
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_01/SOLUZIONI.html">
+       Soluzioni: Lezione 1
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Lezione_02/README.html">
+     Lezione 2: programmazione ad oggetti, le classi
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_02/ESEMPI.html">
+       Esempi: Lezione 2
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_02/ESERCIZI.html">
+       Esercizi per la lezione 2
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_02/SOLUZIONI.html">
+       Soluzioni: Lezione 2
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Lezione_03/README.html">
+     Lezione 3: visualizzazione di dati con ROOT
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_03/ESEMPI.html">
+       Esempi: Lezione 3
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_03/ESERCIZI.html">
+       Esercizi per la lezione 3
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_03/SOLUZIONI.html">
+       Soluzioni: Lezione 3
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Lezione_04/README.html">
+     Lezione 4: la generazione di numeri pseudo-casuali
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_04/ESEMPI.html">
+       Esempi: Lezione 4
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_04/ESERCIZI.html">
+       Esercizi per la lezione 4
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_04/SOLUZIONI.html">
+       Soluzioni: Lezione 4
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Lezione_05/README.html">
+     Lezione 5: programmazione
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       template
+      </span>
+     </code>
+     e Standard Template Library
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_05/ESEMPI.html">
+       Esempi: Lezione 5
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_05/ESERCIZI.html">
+       Esercizi per la lezione 5
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_05/SOLUZIONI.html">
+       Soluzioni: Lezione 5
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Lezione_06/README.html">
+     Lezione 6: zeri ed estremanti di funzioni
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_06/ESEMPI.html">
+       Esempi: Lezione 6
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_06/ESERCIZI.html">
+       Esercizi per la lezione 6
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_06/SOLUZIONI.html">
+       Soluzioni: Lezione 6
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Lezione_07/README.html">
+     Lezione 7: La distribuzione di Poisson
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_07/ESERCIZI.html">
+       Esercizi per la lezione 7
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_07/SOLUZIONI.html">
+       Soluzioni: Lezione 7
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Lezione_08/README.html">
+     Lezione 8: esempi di applicazione di sequenze pseudo-casuali ed esempi di calcolo numerico
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_08/ESEMPI.html">
+       Esempi: Lezione 8
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_08/ESERCIZI.html">
+       Esercizi per la lezione 8
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_08/SOLUZIONI.html">
+       Soluzioni: Lezione 8
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Lezione_09/README.html">
+     Lezione 9: la verosimiglianza
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_09/ESEMPI.html">
+       Esempi: Lezione 9
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_09/ESERCIZI.html">
+       Esercizi per la lezione 9
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_09/SOLUZIONI.html">
+       Soluzioni: Lezione 9
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Lezione_10/README.html">
+     Lezione 10: stima di parametri con il metodo della massima verosimiglianza
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_10/ESERCIZI.html">
+       Esercizi per la lezione 10
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_10/SOLUZIONI.html">
+       Soluzioni: Lezione 10
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Lezione_11/README.html">
+     Lezione 11: il metodo dei minimi quadrati in
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       ROOT
+      </span>
+     </code>
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+    <label for="toctree-checkbox-12">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_11/ESERCIZI.html">
+       Esercizi per la lezione 11
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_11/SOLUZIONI.html">
+       Soluzioni: Lezione 11
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Lezione_12/README.html">
+     Lezione 12: fit di distribuzioni binnate con
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       ROOT
+      </span>
+     </code>
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+    <label for="toctree-checkbox-13">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_12/ESEMPI.html">
+       Esempi: Lezione 12
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Lezione_12/ESERCIZI.html">
+       Esercizi per la lezione 12
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../appendix.html">
+   Appendice
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Appendice_01/README.html">
+     Approfondimento A1: algoritmi predefiniti nelle
+     <em>
+      Standard Template Library
+     </em>
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+    <label for="toctree-checkbox-15">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Appendice_01/ESERCIZI.html">
+       Esercizi per l’appendice A1
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Appendice_01/SOLUZIONI.html">
+       Soluzioni: Appendice A1
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="README.html">
+     Approfondimento A2: programmazione ad oggetti: l’ereditarietà
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       public
+      </span>
+     </code>
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+    <label for="toctree-checkbox-16">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="ESEMPI.html">
+       Esempi: Appendice 2
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="ESERCIZI.html">
+       Esercizi per l’appendice 2
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Soluzioni: Appendice 2
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Appendice_03/README.html">
+     Approfondimento A3: approfondimenti su
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       STL
+      </span>
+     </code>
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+    <label for="toctree-checkbox-17">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Appendice_03/ESEMPI.html">
+       Esempi: Appendice 3
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Appendice_03/ESERCIZI.html">
+       Esercizi per l’appendice 3
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Appendice_03/SOLUZIONI.html">
+       Soluzioni: Appendice 3
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../Appendice_04/README.html">
+     Approfondimento 4: i minimi quadrati ed il caso lineare: soluzione algebrica
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+    <label for="toctree-checkbox-18">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Appendice_04/ESEMPI.html">
+       Esempi: Appendice 4
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Appendice_04/ESERCIZI.html">
+       Esercizi per l’Appendice 4
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../Appendice_05/README.html">
+     Aopprofondimento 5: il salvataggio su file di classi di ROOT
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Appendice_02/SOLUZIONI.rst"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a2-1-a2-2-struttura-di-ereditarieta-delle-forme-geometriche">
+   A2.1-A2.2 struttura di ereditarietà delle forme geometriche
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a2-3-a2-4-struttura-di-ereditarieta-e-generazione-di-numeri-casuali">
+   A2.3-A2.4 struttura di ereditarietà e generazione di numeri casuali
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Soluzioni: Appendice 2</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a2-1-a2-2-struttura-di-ereditarieta-delle-forme-geometriche">
+   A2.1-A2.2 struttura di ereditarietà delle forme geometriche
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#a2-3-a2-4-struttura-di-ereditarieta-e-generazione-di-numeri-casuali">
+   A2.3-A2.4 struttura di ereditarietà e generazione di numeri casuali
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="section" id="soluzioni-appendice-2">
+<h1>Soluzioni: Appendice 2<a class="headerlink" href="#soluzioni-appendice-2" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../_images/linea.png"><img alt="../_images/linea.png" src="../_images/linea.png" style="width: 1100px;" /></a>
+<div class="section" id="a2-1-a2-2-struttura-di-ereditarieta-delle-forme-geometriche">
+<h2>A2.1-A2.2 struttura di ereditarietà delle forme geometriche<a class="headerlink" href="#a2-1-a2-2-struttura-di-ereditarieta-delle-forme-geometriche" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><cite>esercizio01_02.cpp</cite></p></li>
+</ul>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// g++ -o Esercizio01_02 esercizio01_02.cpp forma.cc quadrato.cc rettangolo.cc</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;forma.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;quadrato.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rettangolo.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+
+<span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">;</span><span class="w"></span>
+<span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cin</span><span class="p">;</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *</span>
+<span class="cm"> *  Si definisca una semplice struttura di ereditarieta&#39; delle forme geometriche, seguendo l&#39;esempio presentato ad inizio lezione.</span>
+<span class="cm"> *    - Si aggiunga alla classe forma un membro private (ad esempio un&#39;etichetta) e si verifichi che e&#39; accessibile </span>
+<span class="cm"> *        dalle classi derivate solamente tramite un metodo aggiuntivo public o protected della classe base.</span>
+<span class="cm"> *    - Si verifichi la sequenza delle chiamate dei costruttori e dei distruttori della parte base e derivata delle </span>
+<span class="cm"> *        classi al momento della creazione e della distruzione dei diversi oggetti, inserendo in ogni costruttore e </span>
+<span class="cm"> *        distruttore un messaggio a schemo.</span>
+<span class="cm"> *</span>
+<span class="cm"> *</span>
+<span class="cm"> *  Si modifichi la struttura precedente aggiungendo la funzione calcola_area in tutta la catena di ereditarieta&#39;.</span>
+<span class="cm"> *</span>
+<span class="cm"> *    - Si verifichi il comportamento polimorfico introdotto dal dynamic binding.</span>
+<span class="cm"> *    - Si verifichi che, eliminando la parola chiave virtual, il dynamic binding non funziona.</span>
+<span class="cm"> *    - Si verifichi che il dynamic binding avviene in esecuzione e non in fase di compilazione, </span>
+<span class="cm"> *        implementando una funzione void stampa_area (forma * input) che stampa a schermo l&#39;area </span>
+<span class="cm"> *        di un oggetto di tipo rettangolo o quadrato a seconda della scelta dell&#39;utente.</span>
+<span class="cm"> *</span>
+<span class="cm"> */</span><span class="w"></span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="o">**</span><span class="w"> </span><span class="n">argv</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+
+<span class="w">    </span><span class="cm">/*</span>
+<span class="cm">     *  Esercizio 01</span>
+<span class="cm">     *</span>
+<span class="cm">     *  Vengono definite due classi, forma è una classe generale e quadrato eredita da forma.</span>
+<span class="cm">     *  </span>
+<span class="cm">     *  La classe &#39;forma&#39; ha un membro protected (m_area), direttamente accessibile nella classe quadrato, </span>
+<span class="cm">     *  e un membro privato (m_nome), NON accessibile nella classe quadrato.</span>
+<span class="cm">     */</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Creo un oggetto di tipo forma&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">forma</span><span class="w"> </span><span class="n">forma_generica</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;forma_generica&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;  nome: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">forma_generica</span><span class="p">.</span><span class="n">GetNome</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Creo un oggetto di tipo quadrato&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">quadrato</span><span class="w"> </span><span class="n">forma_quadrata</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;forma_quadrata&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;  nome: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">forma_quadrata</span><span class="p">.</span><span class="n">GetNome</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="cm">/*</span>
+<span class="cm">     *  Esercizio 02</span>
+<span class="cm">     *</span>
+<span class="cm">     *      Vengono aggiunti i metodi calcola_area (definito come virtual) e </span>
+<span class="cm">     *      calcola_area_non_virtual (non definito come virtual) e si verifica </span>
+<span class="cm">     *      che, nel caso di metodo virtual, il dynamic binding funziona</span>
+<span class="cm">     */</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Area di forma_generica</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Calcolo l&#39;area&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;forma_generica&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">area_forma</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">forma_generica</span><span class="p">.</span><span class="n">calcola_area</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;  area: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">area_forma</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Area di forma_quadrata</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;forma_quadrata&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">area_quadrato</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">forma_quadrata</span><span class="p">.</span><span class="n">calcola_area</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;  area: &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">area_quadrato</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Esempio di dynamic binding: usando un puntatore a un oggetto di tipo forma</span>
+<span class="w">    </span><span class="c1">// viene chiamato il metodo &#39;calcola_area&#39; della classe derivata quadrato</span>
+<span class="w">    </span><span class="c1">//</span>
+<span class="w">    </span><span class="c1">// Bisogna definire forma::calcola_area() come virtual!</span>
+
+<span class="w">    </span><span class="n">forma</span><span class="o">*</span><span class="w"> </span><span class="n">puntatore_quadrato</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">forma_quadrata</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;dynamic binding&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">area_quadrato_virtual</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">puntatore_quadrato</span><span class="o">-&gt;</span><span class="n">calcola_area</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Esempio errato di dynamic binding: usando il metodo calcola_area_non_virtual</span>
+<span class="w">    </span><span class="c1">// (non definito come virtual) non viene chiamato il metodo corretto</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;dynamic binding errato - metodo non virtual&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">area_quadrato_non_virtual</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">puntatore_quadrato</span><span class="o">-&gt;</span><span class="n">calcola_area_non_virtual</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Il dynamic binding ha effetto in fase di esecuzione, non di compilazione</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">risultato</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="w"> </span><span class="n">risultato</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">risultato</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Inserire 0 per un quadrato (area 400), 1 per un rettangolo (area 150)&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">risultato</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Lego un puntatore a forma a un oggetto di tipo quadrato o rettangolo,</span>
+<span class="w">    </span><span class="c1">// a seconda della scelta dell&#39;utente</span>
+<span class="w">    </span><span class="n">forma</span><span class="o">*</span><span class="w"> </span><span class="n">forma_dyn</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="w"> </span><span class="n">risultato</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">forma_dyn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">quadrato</span><span class="p">(</span><span class="mi">20</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="w"> </span><span class="n">risultato</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">forma_dyn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">rettangolo</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="w"> </span><span class="n">forma_dyn</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">forma_dyn</span><span class="o">-&gt;</span><span class="n">calcola_area</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Area : &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">delete</span><span class="w"> </span><span class="n">forma_dyn</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><cite>forma.h</cite></p></li>
+</ul>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef forma_h</span>
+<span class="cp">#define forma_h</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span><span class="cp"></span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">forma</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Costruttore di default</span>
+<span class="w">        </span><span class="n">forma</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Costruttore con parametro</span>
+<span class="w">        </span><span class="n">forma</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">-1</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Distruttore</span>
+<span class="w">        </span><span class="o">~</span><span class="n">forma</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Restituisce il nome</span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">GetNome</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Imposta il nome</span>
+<span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="nf">SetNome</span><span class="p">(</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">nome</span><span class="w"> </span><span class="p">);</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Calcola l&#39;area</span>
+<span class="w">        </span><span class="k">virtual</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="nf">calcola_area</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Calcola l&#39;area - non virtual</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="nf">calcola_area_non_virtual</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">protected</span><span class="o">:</span><span class="w"></span>
+<span class="w">        </span><span class="cm">/*</span>
+<span class="cm">         *  I membri protected sono direttamente accessibili alle classi</span>
+<span class="cm">         *  che ereditano da questa classe</span>
+<span class="cm">         */</span><span class="w"></span>
+
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">m_area</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">private</span><span class="o">:</span><span class="w"></span>
+<span class="w">        </span><span class="cm">/*</span>
+<span class="cm">         *  I membri private sono accessibili solo ad oggetti di tipo forma,</span>
+<span class="cm">         *  non alle classi che ereditano da forma</span>
+<span class="cm">         */</span><span class="w"></span>
+<span class="w">        </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">m_nome</span><span class="p">;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><cite>forma.cc</cite></p></li>
+</ul>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;forma.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+
+<span class="c1">// In alternativa a &#39;using namespace std;&#39;, è possibile importare solo</span>
+<span class="c1">// alcune funzioni da un namespace</span>
+<span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">;</span><span class="w"></span>
+<span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Costruttore di default</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="n">forma</span><span class="o">::</span><span class="n">forma</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="n">m_area</span><span class="p">(</span><span class="mi">-1</span><span class="p">),</span><span class="w"> </span><span class="n">m_nome</span><span class="p">(</span><span class="s">&quot;forma&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Chiamato il costruttore (default) di forma&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Costruttore con un parametro</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="n">forma</span><span class="o">::</span><span class="n">forma</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">area</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">m_area</span><span class="p">(</span><span class="n">area</span><span class="p">),</span><span class="w"> </span><span class="n">m_nome</span><span class="p">(</span><span class="s">&quot;forma&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Chiamato il costruttore (con parametro) di forma&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Distruttore</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="n">forma</span><span class="o">::~</span><span class="n">forma</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Chiamato il distruttore di forma&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Restituisce il nome </span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">forma</span><span class="o">::</span><span class="n">GetNome</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">m_nome</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Imposta il nome</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="n">forma</span><span class="o">::</span><span class="n">SetNome</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">nome</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">m_nome</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nome</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Calcola l&#39;area </span>
+<span class="cm"> */</span><span class="w"> </span>
+<span class="kt">double</span><span class="w"> </span><span class="n">forma</span><span class="o">::</span><span class="n">calcola_area</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Chiamata la funzione calcola_area di forma&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">m_area</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Calcola l&#39;area - metodo non virtual</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="kt">double</span><span class="w"> </span><span class="n">forma</span><span class="o">::</span><span class="n">calcola_area_non_virtual</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Chiamata la funzione calcola_area_non_virtual di forma&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">m_area</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><cite>quadrato.h</cite></p></li>
+</ul>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef quadrato_h</span>
+<span class="cp">#define quadarato_h</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;forma.h&quot;</span><span class="cp"></span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">quadrato</span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">forma</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Costruttore di default</span>
+<span class="w">        </span><span class="n">quadrato</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Costruttore con parametro</span>
+<span class="w">        </span><span class="n">quadrato</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">lato</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Distruttore</span>
+<span class="w">        </span><span class="o">~</span><span class="n">quadrato</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Cambia lato</span>
+<span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="nf">cambia_lato</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">lato</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Calcola l&#39;area</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="nf">calcola_area</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Calcola l&#39;area - metodo non virtual</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="nf">calcola_area_non_virtual</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">private</span><span class="o">:</span><span class="w"></span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">m_lato</span><span class="p">;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><cite>quadrato.cc</cite></p></li>
+</ul>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;quadrato.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+
+<span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">;</span><span class="w"></span>
+<span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Costruttore di default</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="n">quadrato</span><span class="o">::</span><span class="n">quadrato</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="n">m_lato</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="n">forma</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="cm">/*</span>
+<span class="cm">     *  Non posso modificare direttamente il contenuto di m_nome, è un membro privato</span>
+<span class="cm">     *  di &#39;forma&#39;. Usare qui m_nome = &quot;quadrato&quot; sarebbe un errore</span>
+<span class="cm">     *  Usando SetNome(), che è un metodo pubblico, non ci sono errori</span>
+<span class="cm">     */</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// m_nome = &quot;quadrato&quot;;</span>
+<span class="w">    </span><span class="n">SetNome</span><span class="p">(</span><span class="s">&quot;quadrato&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Chiamato il costruttore (default) di quadrato&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Costruttore con parametro</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="n">quadrato</span><span class="o">::</span><span class="n">quadrato</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">lato</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">m_lato</span><span class="p">(</span><span class="n">lato</span><span class="p">),</span><span class="w"> </span><span class="n">forma</span><span class="p">(</span><span class="n">lato</span><span class="o">*</span><span class="n">lato</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="cm">/*</span>
+<span class="cm">     *  Non posso modificare direttamente il contenuto di m_nome, è un membro privato</span>
+<span class="cm">     *  di &#39;forma&#39;. Usare qui m_nome = &quot;quadrato&quot; sarebbe un errore.</span>
+<span class="cm">     *  Usando SetNome(), che è un metodo pubblico, non ci sono errori</span>
+<span class="cm">     */</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// m_nome = &quot;quadrato&quot;;</span>
+<span class="w">    </span><span class="n">SetNome</span><span class="p">(</span><span class="s">&quot;quadrato&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Chiamato il costruttore (con parametro) di quadrato&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Distruttore</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="n">quadrato</span><span class="o">::~</span><span class="n">quadrato</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Chiamato il distruttore di quadrato&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Cambia lato</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="n">quadrato</span><span class="o">::</span><span class="n">cambia_lato</span><span class="p">(</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">lato</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">m_lato</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lato</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Posso accedere a m_area, membro di forma, perchè è protected</span>
+<span class="w">    </span><span class="n">m_area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_lato</span><span class="o">*</span><span class="n">m_lato</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Calcola l&#39;area</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="kt">double</span><span class="w"> </span><span class="n">quadrato</span><span class="o">::</span><span class="n">calcola_area</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;chiamata la funzione calcola_area di quadrato&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">m_area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_lato</span><span class="o">*</span><span class="n">m_lato</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">m_area</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Calcola l&#39;area - metodo non virtual</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="kt">double</span><span class="w"> </span><span class="n">quadrato</span><span class="o">::</span><span class="n">calcola_area_non_virtual</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;chiamata la funzione calcola_area_non_virtual di quadrato&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">m_area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_lato</span><span class="o">*</span><span class="n">m_lato</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">m_area</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><cite>rettangolo.h</cite></p></li>
+</ul>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef rettangolo_h</span>
+<span class="cp">#define quadarato_h</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;forma.h&quot;</span><span class="cp"></span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">rettangolo</span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">forma</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Costruttore di default</span>
+<span class="w">        </span><span class="n">rettangolo</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Costruttore con parametro</span>
+<span class="w">        </span><span class="n">rettangolo</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">lato_1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">lato_2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Distruttore</span>
+<span class="w">        </span><span class="o">~</span><span class="n">rettangolo</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Cambia lato</span>
+<span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="nf">cambia_lato_1</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">lato</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="nf">cambia_lato_2</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">lato</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Calcola l&#39;area</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="nf">calcola_area</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Calcola l&#39;area - metodo non virtual</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="nf">calcola_area_non_virtual</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">private</span><span class="o">:</span><span class="w"></span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">m_lato_1</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">m_lato_2</span><span class="p">;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><cite>rettangolo.cc</cite></p></li>
+</ul>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;rettangolo.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+
+<span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">;</span><span class="w"></span>
+<span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Costruttore di default</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="n">rettangolo</span><span class="o">::</span><span class="n">rettangolo</span><span class="p">()</span><span class="o">:</span><span class="w"> </span><span class="n">m_lato_1</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="n">m_lato_2</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="n">forma</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="cm">/*</span>
+<span class="cm">     *  Non posso modificare direttamente il contenuto di m_nome, è un membro privato</span>
+<span class="cm">     *  di &#39;forma&#39;. Usare qui m_nome = &quot;rettangolo&quot; sarebbe un errore</span>
+<span class="cm">     *  Usando SetNome(), che è un metodo pubblico, non ci sono errori</span>
+<span class="cm">     */</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// m_nome = &quot;rettangolo&quot;;</span>
+<span class="w">    </span><span class="n">SetNome</span><span class="p">(</span><span class="s">&quot;rettangolo&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Chiamato il costruttore (default) di rettangolo&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Costruttore con parametro</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="n">rettangolo</span><span class="o">::</span><span class="n">rettangolo</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">lato_1</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">lato_2</span><span class="p">)</span><span class="o">:</span><span class="w"> </span>
+<span class="w">    </span><span class="n">m_lato_1</span><span class="p">(</span><span class="n">lato_1</span><span class="p">),</span><span class="w"> </span><span class="n">m_lato_2</span><span class="p">(</span><span class="n">lato_2</span><span class="p">),</span><span class="w"> </span><span class="n">forma</span><span class="p">(</span><span class="n">lato_1</span><span class="o">*</span><span class="n">lato_2</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="cm">/*</span>
+<span class="cm">     *  Non posso modificare direttamente il contenuto di m_nome, è un membro privato</span>
+<span class="cm">     *  di &#39;forma&#39;. Usare qui m_nome = &quot;rettangolo&quot; sarebbe un errore.</span>
+<span class="cm">     *  Usando SetNome(), che è un metodo pubblico, non ci sono errori</span>
+<span class="cm">     */</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// m_nome = &quot;rettangolo&quot;;</span>
+<span class="w">    </span><span class="n">SetNome</span><span class="p">(</span><span class="s">&quot;rettangolo&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Chiamato il costruttore (con parametro) di rettangolo&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Distruttore</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="n">rettangolo</span><span class="o">::~</span><span class="n">rettangolo</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Chiamato il distruttore di rettangolo&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Cambia lato</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="n">rettangolo</span><span class="o">::</span><span class="n">cambia_lato_1</span><span class="p">(</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">lato_1</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">m_lato_1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lato_1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Posso accedere a m_area, membro di forma, perchè è protected</span>
+<span class="w">    </span><span class="n">m_area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_lato_1</span><span class="o">*</span><span class="n">m_lato_2</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Calcola l&#39;area</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="kt">double</span><span class="w"> </span><span class="n">rettangolo</span><span class="o">::</span><span class="n">calcola_area</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;chiamata la funzione calcola_area di rettangolo&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">m_area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_lato_1</span><span class="o">*</span><span class="n">m_lato_2</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">m_area</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Calcola l&#39;area - metodo non virtual</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="kt">double</span><span class="w"> </span><span class="n">rettangolo</span><span class="o">::</span><span class="n">calcola_area_non_virtual</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;chiamata la funzione calcola_area_non_virtual di rettangolo&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">m_area</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m_lato_1</span><span class="o">*</span><span class="n">m_lato_2</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">m_area</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/linea.png"><img alt="../_images/linea.png" src="../_images/linea.png" style="width: 1100px;" /></a>
+</div>
+<div class="section" id="a2-3-a2-4-struttura-di-ereditarieta-e-generazione-di-numeri-casuali">
+<h2>A2.3-A2.4 struttura di ereditarietà e generazione di numeri casuali<a class="headerlink" href="#a2-3-a2-4-struttura-di-ereditarieta-e-generazione-di-numeri-casuali" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><cite>esercizio03_04.cpp</cite></p></li>
+</ul>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// g++ -o Esercizio03_04 esercizio03_04.cpp generatore.cc generatore_TC.cc generatore_IF.cc generatore_LC.cc</span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;generatore.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;generatore_TC.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;generatore_IF.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;generatore_LC.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;map&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;ctime&gt;</span><span class="cp"></span>
+
+<span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">;</span><span class="w"></span>
+<span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Lezione 8 - Esercizio 03</span>
+<span class="cm"> *</span>
+<span class="cm"> *  Si implementino i generatori di numeri casuali scritti durante la Lezione 4 </span>
+<span class="cm"> *  come oggetti derivati della seguente classe puramente virtuale e si verifichi </span>
+<span class="cm"> *  il dynamic binding.</span>
+<span class="cm"> *</span>
+<span class="cm"> *      class generatore {</span>
+<span class="cm"> *          ...</span>
+<span class="cm"> *      };</span>
+<span class="cm"> *</span>
+<span class="cm"> *</span>
+<span class="cm"> *  Lezione 8 - Esercizio 04</span>
+<span class="cm"> *</span>
+<span class="cm"> *  Si inseriscano i generatori precedenti in una std::map e si utilizzi un </span>
+<span class="cm"> *  loop sugli elementi della mappa per verificare quanto tempo impieghi </span>
+<span class="cm"> *  ciascun generatore, in media, a generare un evento pseudo-casuale.</span>
+<span class="cm"> */</span><span class="w"></span>
+
+<span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="o">**</span><span class="w"> </span><span class="n">argv</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Chiave: nome del generatore</span>
+<span class="w">    </span><span class="c1">// Valore: puntatore a un oggetto derivante da generatore</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">generatore</span><span class="o">*&gt;</span><span class="w"> </span><span class="n">mappa_generatori</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">seed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">14741</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">nPoints</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100000</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Aggiungo i generatori alla mappa, associandoli al proprio nome</span>
+<span class="w">    </span><span class="n">mappa_generatori</span><span class="p">[</span><span class="s">&quot;lineare congruenziale&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">generatore</span><span class="p">(</span><span class="n">seed</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">mappa_generatori</span><span class="p">[</span><span class="s">&quot;try and catch - gaus&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">generatore_TC</span><span class="p">(</span><span class="n">seed</span><span class="p">,</span><span class="w"> </span><span class="n">kGAUS</span><span class="p">,</span><span class="w"> </span><span class="mi">-20</span><span class="p">,</span><span class="w"> </span><span class="mi">20</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">mappa_generatori</span><span class="p">[</span><span class="s">&quot;try and catch - exp&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">generatore_TC</span><span class="p">(</span><span class="n">seed</span><span class="p">,</span><span class="w"> </span><span class="n">kEXP</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">mappa_generatori</span><span class="p">[</span><span class="s">&quot;funzione inversa - exp&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">generatore_IF</span><span class="p">(</span><span class="n">seed</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">mappa_generatori</span><span class="p">[</span><span class="s">&quot;teorema limite centrale - 100 iterazioni&quot;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">generatore_LC</span><span class="p">(</span><span class="n">seed</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">-5</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Itero sulla mappa di generatori</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Tempo richiesto per generare &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">nPoints</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; numeri casuali&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">nome</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">generatore</span><span class="o">*</span><span class="w"> </span><span class="n">gen</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">,</span><span class="w"> </span><span class="n">generatore</span><span class="o">*&gt;::</span><span class="n">const_iterator</span><span class="w"> </span><span class="n">gen_it</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="n">gen_it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mappa_generatori</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="w"> </span><span class="n">gen_it</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">mappa_generatori</span><span class="p">.</span><span class="n">end</span><span class="p">();</span><span class="w"> </span><span class="n">gen_it</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">nome</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gen_it</span><span class="o">-&gt;</span><span class="n">first</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">gen</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gen_it</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">        </span><span class="kt">clock_t</span><span class="w"> </span><span class="n">startTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">clock</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">nPoints</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="kt">double</span><span class="w"> </span><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gen</span><span class="o">-&gt;</span><span class="n">generate</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="kt">clock_t</span><span class="w"> </span><span class="n">endTime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">clock</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">        </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">nome</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; : &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="p">(</span><span class="n">endTime</span><span class="o">-</span><span class="n">startTime</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="n">CLOCKS_PER_SEC</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="c1">// Pulizia del contenuto della mappa</span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="n">gen_it</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">mappa_generatori</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span><span class="w"> </span><span class="n">gen_it</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">mappa_generatori</span><span class="p">.</span><span class="n">end</span><span class="p">();</span><span class="w"> </span><span class="n">gen_it</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">delete</span><span class="w"> </span><span class="n">gen_it</span><span class="o">-&gt;</span><span class="n">second</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">mappa_generatori</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><cite>generatore.h</cite></p></li>
+</ul>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef generatore_h</span>
+<span class="cp">#define generatore_h</span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Generatore lineare congruenziale</span>
+<span class="cm"> */</span><span class="w"></span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">generatore</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Costruttore</span>
+<span class="w">        </span><span class="n">generatore</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">seed</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Distruttore</span>
+<span class="w">        </span><span class="o">~</span><span class="n">generatore</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Imposta il seed</span>
+<span class="w">        </span><span class="kt">void</span><span class="w"> </span><span class="nf">set_seed</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">seed</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Genera un numero casuale</span>
+<span class="w">        </span><span class="k">virtual</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="nf">generate</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">protected</span><span class="o">:</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Seed</span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">m_seed</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Costanti per la generazione di numeri casuali</span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">214013</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">C</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2531011</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">const</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">M</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2147483647</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Genera un numero casuale nel range tra m_min e m_max</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="nf">rand_range</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">min</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">max</span><span class="p">);</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><cite>generatore.cc</cite></p></li>
+</ul>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;generatore.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+
+<span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">;</span><span class="w"></span>
+<span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Costruttore</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="n">generatore</span><span class="o">::</span><span class="n">generatore</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">seed</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">m_seed</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Chiamato il costruttore del generatore lineare congruenziale&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Distruttore</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="n">generatore</span><span class="o">::~</span><span class="n">generatore</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Chiamato il distruttore del generatore lineare congruenziale&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Imposta il seed  </span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="kt">void</span><span class="w"> </span><span class="n">generatore</span><span class="o">::</span><span class="n">set_seed</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">seed</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">m_seed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seed</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Chiamato il metodo set_seed del generatore lineare congruenziale&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Restituisce il prossimo numero casuale</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="kt">double</span><span class="w"> </span><span class="n">generatore</span><span class="o">::</span><span class="n">generate</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">m_seed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">A</span><span class="o">*</span><span class="n">m_seed</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">C</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="n">M</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">m_seed</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Genera un numero casuale in un range [m_min, m_max]</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="kt">double</span><span class="w"> </span><span class="n">generatore</span><span class="o">::</span><span class="n">rand_range</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">min</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">max</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// Genero un numero casuale dal generatore congruenziale</span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">rnd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">generatore</span><span class="o">::</span><span class="n">generate</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">min</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">max</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">min</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">rnd</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">M</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><cite>generatore_IF.h</cite></p></li>
+</ul>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef generatore_IF_h</span>
+<span class="cp">#define generatore_IF_h</span>
+
+
+<span class="cm">/*</span>
+<span class="cm"> *  Generatore con funzione inversa - esponenziale</span>
+<span class="cm"> */</span><span class="w"></span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;generatore.h&quot;</span><span class="cp"></span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">generatore_IF</span><span class="o">:</span><span class="k">public</span><span class="w"> </span><span class="n">generatore</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Costruttore</span>
+<span class="w">        </span><span class="n">generatore_IF</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">seed</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">min</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">max</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Distruttore</span>
+<span class="w">        </span><span class="o">~</span><span class="n">generatore_IF</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Genera un numero casuale</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="nf">generate</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">private</span><span class="o">:</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Minimo valore di X su cui generare</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">m_min</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Massimo valore di X su cui generare</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">m_max</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Genera un numero casuale da distribuzione esponenziale</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="nf">rand_IF</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><cite>generatore_IF.cc</cite></p></li>
+</ul>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;generatore_IF.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cmath&gt;</span><span class="c1"> // log</span><span class="cp"></span>
+
+<span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">;</span><span class="w"></span>
+<span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Costruttore</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="n">generatore_IF</span><span class="o">::</span><span class="n">generatore_IF</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">seed</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">min</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">max</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">m_min</span><span class="p">(</span><span class="n">min</span><span class="p">),</span><span class="w"> </span><span class="n">m_max</span><span class="p">(</span><span class="n">max</span><span class="p">),</span><span class="w"> </span><span class="n">generatore</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Chiamato il costruttore del generatore con funzione inversa&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Distruttore</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="n">generatore_IF</span><span class="o">::~</span><span class="n">generatore_IF</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Chiamato il distruttore del generatore con funzione inversa&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Genera un numero casuale</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="kt">double</span><span class="w"> </span><span class="n">generatore_IF</span><span class="o">::</span><span class="n">generate</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">rand_val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rand_range</span><span class="p">(</span><span class="n">m_min</span><span class="p">,</span><span class="w"> </span><span class="n">m_max</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">rand_IF</span><span class="p">(</span><span class="n">rand_val</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Genera un numero casuale da e^(-0.1*x)</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="kt">double</span><span class="w"> </span><span class="n">generatore_IF</span><span class="o">::</span><span class="n">rand_IF</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">lambda</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="p">(</span><span class="n">log</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">y</span><span class="p">)</span><span class="o">/</span><span class="n">lambda</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><cite>generatore_LC.h</cite></p></li>
+</ul>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef generatore_LC_h</span>
+<span class="cp">#define generatore_LC_h</span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Generatore con teorema del limite centrale</span>
+<span class="cm"> */</span><span class="w"></span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;generatore.h&quot;</span><span class="cp"></span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">generatore_LC</span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">generatore</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Costruttore</span>
+<span class="w">        </span><span class="n">generatore_LC</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">seed</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">min</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">max</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Distruttore</span>
+<span class="w">        </span><span class="o">~</span><span class="n">generatore_LC</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Genera numeri casuali</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="nf">generate</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">private</span><span class="o">:</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Numero di estrazioni </span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">m_N</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Valore minimo</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">m_min</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Valore massimo</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">m_max</span><span class="p">;</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><cite>generatore_LC.cc</cite></p></li>
+</ul>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;generatore_LC.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+
+<span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="p">;</span><span class="w"></span>
+<span class="k">using</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Costruttore</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="n">generatore_LC</span><span class="o">::</span><span class="n">generatore_LC</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">seed</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">min</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">max</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">m_N</span><span class="p">(</span><span class="n">N</span><span class="p">),</span><span class="w"> </span><span class="n">m_min</span><span class="p">(</span><span class="n">min</span><span class="p">),</span><span class="w"> </span><span class="n">m_max</span><span class="p">(</span><span class="n">max</span><span class="p">),</span><span class="w"> </span><span class="n">generatore</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Chiamato il costruttore del generatore con teorema del limite centrale&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Distruttore</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="n">generatore_LC</span><span class="o">::~</span><span class="n">generatore_LC</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Chiamato il distruttore del generatore con teorema del limite centrale&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Genera numeri casuali</span>
+<span class="cm"> */</span><span class="w"></span>
+<span class="kt">double</span><span class="w"> </span><span class="n">generatore_LC</span><span class="o">::</span><span class="n">generate</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">mean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">m_N</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span>
+<span class="w">        </span><span class="n">mean</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">rand_range</span><span class="p">(</span><span class="n">m_min</span><span class="p">,</span><span class="w"> </span><span class="n">m_max</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">mean</span><span class="o">/</span><span class="n">m_N</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><cite>generatore_TC.h</cite></p></li>
+</ul>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef generatoreTC</span>
+<span class="cp">#define generatoreTC</span>
+
+<span class="cm">/*</span>
+<span class="cm"> *  Generatore Try-And-Catch</span>
+<span class="cm"> */</span><span class="w"> </span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;generatore.h&quot;</span><span class="cp"></span>
+
+<span class="k">enum</span><span class="w"> </span><span class="nc">funzioni</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">kGAUS</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">kEXP</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">generatore_TC</span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">generatore</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">public</span><span class="o">:</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Costruttore - parametri</span>
+<span class="w">        </span><span class="n">generatore_TC</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">seed</span><span class="p">,</span><span class="w"> </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">function</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">kGAUS</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">max</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Distruttore</span>
+<span class="w">        </span><span class="o">~</span><span class="n">generatore_TC</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Genera un numero casuale dalla distribuzione richiesta</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="nf">generate</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="k">private</span><span class="o">:</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Seleziona il tipo di funzione da utilizzare</span>
+<span class="w">        </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">m_function</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Minimo valore X per l&#39;estrazione</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">m_min</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Massimo valore X per l&#39;estrazione</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="n">m_max</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Genera un numero casuale con try and catch</span>
+<span class="w">        </span><span class="kt">double</span><span class="w"> </span><span class="nf">rand_TAC</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">f</span><span class="p">(</span><span class="kt">double</span><span class="p">),</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">y_max</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">        </span><span class="c1">// Calcola il valore della gaussiana (centro=0, sigma=5)</span>
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="nf">eval_gaus</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">x</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Calcola il valore dell&#39;esponenziale e^(-0.1*x)</span>
+<span class="w">        </span><span class="k">static</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="nf">eval_exp</span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">x</span><span class="p">);</span><span class="w"></span>
+
+<span class="p">};</span><span class="w"></span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><cite>generatore_TC.cc</cite></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">#include &quot;generatore_TC.h&quot;</span>
+
+<span class="c1">#include &lt;iostream&gt;</span>
+<span class="c1">#include &lt;cmath&gt;</span>
+
+<span class="n">using</span> <span class="n">std</span><span class="p">::</span><span class="n">cout</span><span class="p">;</span>
+<span class="n">using</span> <span class="n">std</span><span class="p">::</span><span class="n">endl</span><span class="p">;</span>
+
+<span class="o">/*</span>
+ <span class="o">*</span>  <span class="n">Costruttore</span>
+ <span class="o">*/</span>
+<span class="n">generatore_TC</span><span class="p">::</span><span class="n">generatore_TC</span><span class="p">(</span><span class="nb">int</span> <span class="n">seed</span><span class="p">,</span> <span class="n">unsigned</span> <span class="nb">int</span> <span class="n">function</span><span class="p">,</span> <span class="n">double</span> <span class="nb">min</span><span class="p">,</span> <span class="n">double</span> <span class="nb">max</span><span class="p">)</span> <span class="p">:</span> <span class="n">m_function</span><span class="p">(</span><span class="n">function</span><span class="p">),</span> <span class="n">m_min</span><span class="p">(</span><span class="nb">min</span><span class="p">),</span> <span class="n">m_max</span><span class="p">(</span><span class="nb">max</span><span class="p">),</span> <span class="n">generatore</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;Chiamato il costruttore del generatore try and catch&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+
+    <span class="k">if</span><span class="p">(</span> <span class="n">m_function</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;Funzione non valida!&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="o">/*</span>
+ <span class="o">*</span>  <span class="n">Distruttore</span>
+ <span class="o">*/</span>
+<span class="n">generatore_TC</span><span class="p">::</span><span class="o">~</span><span class="n">generatore_TC</span><span class="p">()</span> <span class="p">{</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;Chiamato il distruttore del generatore try and catch&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">/*</span>
+ <span class="o">*</span>  <span class="n">Genera</span> <span class="n">un</span> <span class="n">numero</span> <span class="n">casuale</span> <span class="n">dalla</span> <span class="n">distribuzione</span> <span class="n">richiesta</span>
+ <span class="o">*/</span>
+<span class="n">double</span> <span class="n">generatore_TC</span><span class="p">::</span><span class="n">generate</span><span class="p">()</span> <span class="p">{</span>
+
+    <span class="n">double</span> <span class="n">y_max</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">double</span> <span class="n">val</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+    <span class="n">double</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">double</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        
+    <span class="n">switch</span><span class="p">(</span> <span class="n">m_function</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="n">kGAUS</span><span class="p">:</span>
+            <span class="o">//</span> <span class="n">Valuto</span> <span class="n">y_max</span> <span class="n">a</span> <span class="n">seconda</span> <span class="n">di</span> <span class="n">m_min</span> <span class="n">e</span> <span class="n">m_max</span>
+            <span class="k">if</span><span class="p">(</span> <span class="n">m_min</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">m_max</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">)</span> <span class="p">{</span>
+                <span class="o">//</span> <span class="n">La</span> <span class="n">gaussiana</span> <span class="n">passa</span> <span class="n">da</span> <span class="mi">0</span><span class="p">,</span> <span class="n">il</span> <span class="n">massimo</span> <span class="n">è</span> <span class="n">quello</span> <span class="n">della</span> <span class="n">gaussiana</span>
+                <span class="n">y_max</span> <span class="o">=</span> <span class="n">eval_gaus</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> 
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="o">//</span> <span class="n">La</span> <span class="n">gaussiana</span> <span class="n">non</span> <span class="n">passa</span> <span class="n">da</span> <span class="mi">0</span><span class="p">,</span> <span class="n">è</span> <span class="n">monotona</span>
+                <span class="n">y_max</span> <span class="o">=</span> <span class="n">eval_gaus</span><span class="p">(</span><span class="n">m_min</span><span class="p">);</span>
+                <span class="n">double</span> <span class="n">y2</span> <span class="o">=</span> <span class="n">eval_gaus</span><span class="p">(</span><span class="n">m_max</span><span class="p">);</span>
+                <span class="k">if</span><span class="p">(</span> <span class="n">y2</span> <span class="o">&gt;</span> <span class="n">y_max</span> <span class="p">)</span>
+                    <span class="n">y_max</span> <span class="o">=</span> <span class="n">y2</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="n">val</span> <span class="o">=</span> <span class="n">rand_TAC</span><span class="p">(</span><span class="n">eval_gaus</span><span class="p">,</span> <span class="n">y_max</span><span class="p">);</span>
+
+            <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="n">kEXP</span><span class="p">:</span>
+            <span class="o">//</span> <span class="n">Calcolo</span> <span class="n">di</span> <span class="n">y_max</span> <span class="o">-</span> <span class="n">esponenziale</span> <span class="n">monotono</span> <span class="n">decrescente</span>
+            <span class="n">y_max</span> <span class="o">=</span> <span class="n">eval_exp</span><span class="p">(</span><span class="n">m_min</span><span class="p">);</span> 
+
+            <span class="n">val</span> <span class="o">=</span> <span class="n">rand_TAC</span><span class="p">(</span><span class="n">eval_exp</span><span class="p">,</span> <span class="n">y_max</span><span class="p">);</span>
+
+            <span class="k">break</span><span class="p">;</span>
+        <span class="n">default</span><span class="p">:</span>
+            <span class="o">//</span> <span class="n">Solo</span> <span class="n">Gaus</span> <span class="n">e</span> <span class="n">Exp</span> <span class="n">sono</span> <span class="n">implementate</span>
+            <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="k">return</span> <span class="n">val</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">/*</span>
+ <span class="o">*</span>  <span class="n">Genera</span> <span class="n">un</span> <span class="n">numero</span> <span class="n">casuale</span> <span class="n">con</span> <span class="k">try</span> <span class="ow">and</span> <span class="n">catch</span>
+ <span class="o">*/</span>
+<span class="n">double</span> <span class="n">generatore_TC</span><span class="p">::</span><span class="n">rand_TAC</span><span class="p">(</span><span class="n">double</span> <span class="n">f</span><span class="p">(</span><span class="n">double</span><span class="p">),</span> <span class="n">double</span> <span class="n">y_max</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">double</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">double</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+    <span class="n">do</span> <span class="p">{</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">rand_range</span><span class="p">(</span><span class="n">m_min</span><span class="p">,</span> <span class="n">m_max</span><span class="p">);</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">rand_range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">y_max</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">while</span><span class="p">(</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">);</span>
+
+    <span class="k">return</span> <span class="n">x</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">/*</span>
+ <span class="o">*</span>  <span class="n">Calcola</span> <span class="n">il</span> <span class="n">valore</span> <span class="n">della</span> <span class="n">gaussiana</span> <span class="p">(</span><span class="n">centro</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">sigma</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+ <span class="o">*/</span> 
+<span class="n">double</span> <span class="n">generatore_TC</span><span class="p">::</span><span class="n">eval_gaus</span><span class="p">(</span><span class="n">double</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="mf">1.</span><span class="o">/</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">M_PI</span><span class="o">*</span><span class="mf">5.</span><span class="o">*</span><span class="mf">5.</span><span class="p">)</span> <span class="o">*</span> <span class="n">exp</span><span class="p">(</span> <span class="o">-</span><span class="mf">0.5</span> <span class="o">*</span> <span class="nb">pow</span><span class="p">(</span> <span class="n">x</span><span class="o">/</span><span class="mf">5.</span><span class="p">,</span> <span class="mi">2</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="o">/*</span>
+ <span class="o">*</span>  <span class="n">Calcola</span> <span class="n">il</span> <span class="n">valore</span> <span class="n">dell</span><span class="s1">&#39;esponenziale e^(-0.1*x)</span>
+ <span class="o">*/</span>
+<span class="n">double</span> <span class="n">generatore_TC</span><span class="p">::</span><span class="n">eval_exp</span><span class="p">(</span><span class="n">double</span> <span class="n">x</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="mf">0.1</span><span class="o">*</span><span class="n">x</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/linea.png"><img alt="../_images/linea.png" src="../_images/linea.png" style="width: 1100px;" /></a>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Appendice_02"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="ESERCIZI.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Esercizi per l’appendice 2</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../Appendice_03/README.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Approfondimento A3: approfondimenti su <code class="docutils literal notranslate"><span class="pre">STL</span></code></p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Docenti del Corso di Laboratorio 2<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
